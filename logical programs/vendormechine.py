@@ -22,19 +22,19 @@ def min_notes(change, denominations):
         - int: Minimum number of notes needed to return the change.
         - list: List of note denominations that make up the change.
     """
-    # Initialize the number of notes and the combination list
+   
     num_notes = 0
     notes_combination = []
 
-    # Iterate over the denominations in descending order
+   
     for note in denominations:
         if change == 0:
             break
 
-        # Calculate the number of notes of the current denomination
+       
         count = change // note
 
-        # If we can use this denomination, update the change and add to the list
+        
         if count > 0:
             num_notes += count
             notes_combination.extend([note] * count)
