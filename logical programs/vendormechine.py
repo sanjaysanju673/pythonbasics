@@ -34,7 +34,7 @@ def min_notes(change, denominations):
        
         count = change // note
 
-        
+  
         if count > 0:
             num_notes += count
             notes_combination.extend([note] * count)
